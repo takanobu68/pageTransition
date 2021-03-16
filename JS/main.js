@@ -2,15 +2,9 @@ const btn = document.querySelector(".btn");
 const container = document.querySelector(".container");
 
 btn.addEventListener("click", () => {
-  // const el = document.createElement("div");
-  // el.textContent = "テスト";
-  // container.appendChild(el);
   document.addEventListener("mousewheel", noScroll, { passive: false });
   test();
-  // setTimeout(() => (location.href = "./work.html"), 3000);
 });
-
-// function anime() {}
 
 function test() {
   anime({
@@ -27,11 +21,6 @@ function test() {
     },
   });
 }
-// test();
-
-// function con() {
-//   console.log(true);
-// }
 
 function noScroll(event) {
   event.preventDefault();
